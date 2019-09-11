@@ -1,0 +1,23 @@
+body {
+    padding: 8px !important;
+}
+
+.nav-img-r {
+    margin-right: 10px;
+}
+
+.nav-nombre {
+    font-size: 25px;
+    margin-right: 13px;
+}
+
+.nav-lema {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.inicio-slide img {
+    margin: auto;
+    border-radius: 5px;
+    width: 100%;
+}
