@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import iasd from '../images/iasd.png';
 import shahasim from '../images/shahasim.png';
 
 const Header =  () => {
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <Link className="navbar-brand" to="/">
-                <img src={iasd} className="nav-img-r" alt="IASD" width="40" height="40"></img>
-                <img src={shahasim} className="nav-img-r" alt="SHAHASIM" width="40" height="40"></img>
+                <img src={shahasim} className="nav-img-r" alt="SHAHASIM" width="80" height="80"></img>
                 <span className="nav-nombre">Club Shahasim</span>
                 <span className="nav-lema">"Aquí va el lema"</span>
             </Link>

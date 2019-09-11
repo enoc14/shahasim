@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
 import Contacto from './components/Contacto';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/nosotros" component={ Nosotros } />
           <Route path="/contacto" component={ Contacto } />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
