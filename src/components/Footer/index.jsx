@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="container-fluid bg-primary">
             <div className="row p-3">
                 <div className="col-4 text-center">
+                    <h5 className="text-white">IASD</h5>
                     <img src={iasd} alt="IASD" width="50" height="50"/>
-                    <h5 className="text-white mt-2">Iglesia Adventista del Sétpimo Día</h5>
                 </div>
                 <div className="col-4 text-center">
                     <h5 className="text-white">Direccion</h5>
@@ -15,9 +15,10 @@ const Footer = () => {
                 </div>
                 <div className="col-4 text-center">
                     <h5 className="text-white">Red social</h5>
-                    <i className="fa fa-facebook-square"></i>
+                    <i className="fa fa-facebook-square fa-size-md"></i>
                 </div>
                 <div className="col-12">
+                    <hr className="hr-footer"/>
                     <p className="text-center">&copy; Copyright 2019 | Club Shahasim</p>
                 </div>
             </div>
