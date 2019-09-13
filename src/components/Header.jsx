@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { topFunction } from './stuffs'
 import shahasim from '../images/shahasim.png';
 
-console.log(window.innerWidth);
-
 const Header =  () => {
-
 
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -27,16 +25,16 @@ const Header =  () => {
 
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-item active">
+                    <li className="nav-item">
                         <Link className="nav-link" to="/">
-                            Inicio <span className="sr-only">(current)</span>
+                            Inicio
                         </Link>
                     </li>
                     <li className="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Nosotros
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <Link className="dropdown-item" to="/nosotros#historia">Historia</Link>
                             <Link className="dropdown-item" to="/nosotros#actividades">Actividades recientes</Link>
                         </div>
@@ -46,6 +44,9 @@ const Header =  () => {
                     </li>
                 </ul>
             </div>
+            <button onClick={topFunction} id="myBtn" title="Go to top">
+                <i className="fa fa-rocket"></i>
+            </button> 
         </nav>
     );
 }
